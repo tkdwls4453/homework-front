@@ -65,8 +65,8 @@
              })
 
              function save() {
-                 alert("눌렸습니다")
                 var form_data = new FormData($('#upload-file')[0]);
+                console.log(form_data)
                 $.ajax({
                     type: 'POST',
                     url: 'http://homeworkapp-env.eba-hnqunpem.ap-northeast-2.elasticbeanstalk.com/fileupload',
